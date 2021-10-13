@@ -1,0 +1,55 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: inherit;
+}
+
+:root {
+  --text-black: #222222;
+  --white: #ffffff;
+  --orange: #fb4734;
+  --blue: #0080ff;
+  --grey: #777777;
+  --grey-light: #f7f7f7;
+  --bg-black: #201b32;
+  --yellow: #ffc600;
+}
+
+.common-home {
+  background-image: url(../img/body-wallpaper.jpg);
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-font-smoothing: antialiased;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+}
+
+.container {
+  width: 1200px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.full-width {
+  overflow: hidden;
+  width: 100%;
+}
+
+.box-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.mr-container {
+  margin-right: -3rem;
+}

@@ -1,0 +1,417 @@
+@media screen and (min-width: 1024px) {
+  .header-top {
+    padding: 1.5rem 2rem;
+  }
+
+  ul.header-navigation li {
+    margin: 0 1rem;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .header-nav-center {
+    display: none;
+  }
+
+  .side-bar {
+    display: block;
+  }
+
+  .form-search {
+    margin: 0 1.2rem;
+  }
+
+  .service-box {
+    width: calc(50% - 3rem);
+    margin-bottom: 3rem;
+  }
+
+  .shopping-my-cart {
+    right: 5rem;
+    width: 28rem;
+  }
+
+  .shopping-cart-box {
+    margin: 1.2rem 0;
+  }
+
+  .shopping-cart-box-content {
+    margin-left: 1rem;
+  }
+
+  .shopping-cart-box-content h3 {
+    font-size: 1.4rem;
+  }
+
+  .product-box {
+    width: calc(33% - 3rem);
+  }
+
+  .product-image {
+    height: 100%;
+    width: 100%;
+  }
+
+  .product-imgage-box {
+    height: 22.6rem;
+    display: block;
+  }
+
+  .price-cart {
+    flex-direction: column;
+  }
+
+  .rating-product {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .price {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .banner-desc {
+    font-size: 2.5rem;
+  }
+
+  .inner-1 {
+    right: 64%;
+  }
+
+  .pizza-2 {
+    background-size: 65%;
+  }
+
+  .order-now {
+    height: 30rem;
+  }
+
+  .banner-saleof {
+    width: 12.2rem;
+    height: 12.2rem;
+    right: -43%;
+    top: -6.5rem;
+  }
+
+  .banner-saleof span:nth-child(1) {
+    font-size: 1.6rem;
+  }
+
+  .banner-saleof span:nth-child(2) {
+    font-size: 3.5rem;
+  }
+
+  .pizza-2::before {
+    background-size: 36rem;
+  }
+
+  .icon-letter {
+    width: 140px;
+    height: 85px;
+  }
+
+  .product-title {
+    font-size: 2.6rem;
+  }
+
+  .categori-img {
+    width: 16.2rem;
+  }
+
+  .banner__title {
+    font-size: 2rem;
+  }
+
+  .banner__btn-default {
+    margin-top: 1.6rem;
+    padding-left: 2.5rem;
+  }
+
+  .banner__title__outer {
+    line-height: 0;
+  }
+
+  .banner__title-right {
+    font-size: 5rem;
+  }
+
+  .banner__offer {
+    top: 5rem;
+    left: -2rem;
+  }
+
+  .banner__offer span {
+    font-size: 1.4rem;
+  }
+
+  .customer {
+    height: 52.2rem;
+  }
+
+  .customer-slider {
+    padding: 3rem 0rem;
+  }
+
+  .blog-box {
+    width: calc(50% - 3rem);
+  }
+
+  .social-link-item {
+    margin-right: 1rem;
+    margin-bottom: 1.2rem;
+  }
+
+  ul.site-list li {
+    font-size: 1.25rem;
+  }
+
+  .footer-bottom {
+    margin-top: 2.5rem;
+  }
+}
+
+/* Iphone */
+@media screen and (max-width: 767px) {
+  .modal-form {
+    width: 32rem;
+    padding: 3rem;
+  }
+
+  .modal-title {
+    font-size: 2rem;
+  }
+
+  .modal-text {
+    font-size: 1.3rem;
+    margin-bottom: 1.4rem;
+  }
+
+  .btn-subscribe {
+    padding: 1rem 2.5rem;
+  }
+
+  .check-form label {
+    font-size: 1.2rem;
+  }
+
+  .form-modal-control {
+    margin-top: 1.2rem;
+  }
+
+  .header-nav {
+    padding: 0.5rem;
+  }
+
+  .hotline-number {
+    display: none;
+  }
+
+  .header-top-right {
+    font-size: 1.3rem;
+  }
+
+  .logo {
+    width: 135px;
+  }
+
+  .cart-content {
+    font-size: 2rem;
+  }
+
+  .form-search {
+    display: none;
+  }
+
+  .icon-search {
+    display: block;
+  }
+
+  .side-bar {
+    margin-left: 2rem;
+  }
+
+  .shopping-my-cart {
+    width: 23rem;
+  }
+
+  .service-box {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-right: 0;
+    margin-left: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .service-content {
+    text-align: left;
+    margin-left: 1.5rem;
+  }
+
+  .service-circle {
+    width: 6.5rem;
+    height: 6.5rem;
+    font-size: 2.6rem;
+  }
+
+  .product-imgage-box {
+    height: 16.5rem;
+    display: block;
+  }
+
+  .order-now {
+    height: 15rem;
+  }
+
+  .banner-desc {
+    font-size: 1.4rem;
+  }
+
+  .btn-default {
+    padding: 0.5rem 1.4rem;
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+  }
+
+  .banner-saleof {
+    width: 6.8rem;
+    height: 6.8rem;
+    right: -43%;
+    top: -0.5rem;
+    padding: 0.8rem 0.5rem;
+  }
+
+  .banner-saleof span:nth-child(1) {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+  }
+
+  .banner-saleof span:nth-child(2) {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .banner-saleof span:nth-child(3) {
+    font-size: 1.6rem;
+  }
+
+  .pizza-2::before {
+    background-size: 17rem;
+  }
+
+  .banner-desc {
+    margin-left: 1.5rem;
+  }
+
+  .pizza-1 {
+    height: 25.2rem;
+    width: 100%;
+    background: url(/assets/img/pizza.png) -10rem center no-repeat;
+    background-size: 80%;
+  }
+
+  .icon-letter {
+    display: none;
+  }
+
+  .newletter-left {
+    width: calc(100% - 3rem);
+    margin-right: 0rem;
+  }
+
+  .newletter-box {
+    text-align: center;
+    padding: 1.5rem;
+  }
+
+  .newletter-right {
+    padding: 0;
+    width: 100%;
+    margin-top: 1.2rem;
+  }
+
+  .form-email {
+    width: 30rem;
+    position: relative;
+  }
+
+  .shopping-cart-box-content h3 {
+    font-size: 1.3rem;
+  }
+
+  .shopping-cart-box-content span {
+    font-size: 1.5rem;
+  }
+
+  .shopping-cart-box i {
+    font-size: 1.8rem;
+  }
+
+  .categoies {
+    padding-bottom: 3.5rem;
+    padding-top: 3.5rem;
+  }
+
+  .categori-img {
+    width: 12.2rem;
+  }
+
+  .categori-content {
+    font-size: 2.5rem;
+  }
+
+  .banner-sale-left {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .banner-sale-right {
+    width: 100%;
+  }
+
+  .customer {
+    height: 60.5rem;
+  }
+
+  .name-title {
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+  }
+
+  .customer-img {
+    margin-bottom: 1.3rem;
+  }
+
+  .customer-text {
+    font-size: 1.3rem;
+  }
+
+  .blog {
+    padding: 2.5rem 0;
+  }
+
+  .blog-content {
+    padding: 5rem 3rem 4.2rem 4rem;
+  }
+
+  .brand {
+    padding: 2rem 0;
+  }
+
+  .footer-top {
+    padding: 4rem 0;
+  }
+
+  .footer-1 {
+    width: 100%;
+  }
+
+  .footer-2 {
+    width: 100%;
+  }
+
+  .footer-3 {
+    width: 100%;
+  }
+}

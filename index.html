@@ -1,0 +1,1265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://image.similarpng.com/very-thumbnail/2020/06/Pizza-logo-vector-PNG.png" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster:regular" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+    rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <title>Home</title>
+</head>
+<body class="common-home">
+     <!-- Loader starts -->
+     <div class="loader-container">
+        <img src="./assets/img/loader.gif" alt="">
+    </div>
+<!-- Loader ends -->
+
+<!-- Modal starts-->
+<div class="modal">
+    <div class="modal-form">
+        <h3 class="modal-title">Subscribe Emails</h3>
+        <p class="modal-text">
+            Subscribe and get notified at first on the latest update <br> and offers!
+        </p>
+        <div class="form-modal">
+            <input type="email" class="form-modal-control" placeholder="Enter Your E-mail..">
+            <button class="btn-subscribe">Subscribe</button>
+        </div>
+        <div class="check-box">
+            <div class="check-form">
+                <input type="checkbox">
+                <label for="">Don't show this popup again!</label>
+            </div>
+            <div class="button-check-close">
+                <i class="fa fa-times" aria-hidden="true" id="btn__check-close"></i>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal ends-->
+    <div class="main full-width">    
+        <!-- Header-top starts-->
+
+        <div class="header-top">
+            <div class="container">
+                <div class="header-top-flex">
+                    <div class="header-hotline">
+                        <i class="fa fa-phone" aria-hidden="true">
+                            <span class="hotline-number">+1 (123) 8425733</span>
+                        </i>
+                    </div>
+                    <div class="header-top-right">
+                        <span class="header-top-current">
+                            Currency : USD
+                            <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                        </span>
+                        <span class="header-top-language">
+                            Language : En-Gb
+                            <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Header-top ends -->
+
+        <!-- Header-nav starts-->
+        <div class="container">
+            <div class="header-nav">
+                <div class="header-nav-left">
+                    <div class="logo">
+                        <a href="#">
+                            <img class="logo-img" src="./assets/img/logo.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="header-nav-center">
+                    <ul class="header-navigation">
+                        <li>
+                            <a href="#Home" class="item item-active" onclick="menu(this)">Home</a>
+                        </li>
+                        <li>
+                            <a href="#Shop" class="item" onclick="menu(this)">Shop
+                                <i class="fa fa-angle-down" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#Categories" class="item" onclick="menu(this)">Categories
+                                <i class="fa fa-angle-down" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#Product" class="item" onclick="menu(this)">Product
+                                <i class="fa fa-angle-down" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#Pages" class="item" onclick="menu(this)">Pages
+                                <i class="fa fa-angle-down" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#Blog" class="item" onclick="menu(this)">Blog</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header-nav-right">
+                    <div class="form-search">
+                        <input type="text" placeholder="Search...">
+                        <button class="search-btn"><i class="fa fa-search"></i></button>
+                    </div>
+                    <div class="cart-content">
+                        <div class="icon-search">
+                            <i class="fa fa-search"></i>
+                        </div>
+                        <div class="side-bar">
+                            <i class="fa fa-bars"></i>
+                        </div>
+                        <div class="shopping-cart" id="shopping-cart">
+                            <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+                        </div>
+                        <div class="login" id="login__user">
+                            <i class="fa fa-user" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="shopping-my-cart">
+                    <div class="shopping-cart-box">
+                        <i class="fa fa-trash" id="btn__danger"></i>
+                        <img src="./assets/img/pizza-1.jpg" alt="">
+                        <div class="shopping-cart-box-content">
+                            <h3>Pizza Cheese chicken</h3>
+                            <span class="shopping-cart-price">$4.99</span>
+                            <span class="quantity">Qt : 1</span>
+                        </div>
+                    </div>
+                    <div class="shopping-cart-box">
+                        <i class="fa fa-trash" id="btn__danger"></i>
+                        <img src="./assets/img/pizza-2.jpg" alt="">
+                        <div class="shopping-cart-box-content">
+                            <h3>Pizza Cheese chicken</h3>
+                            <span class="shopping-cart-price">$4.99</span>
+                            <span class="quantity">Qt : 1</span>
+                        </div>
+                    </div>
+                    <div class="shopping-cart-box">
+                        <i class="fa fa-trash" id="btn__danger"></i>
+                        <img src="./assets/img/pizza-3.jpg" alt="">
+                        <div class="shopping-cart-box-content">
+                            <h3>Pizza Cheese chicken</h3>
+                            <span class="shopping-cart-price">$4.99</span>
+                            <span class="quantity">Qt : 1</span>
+                        </div>
+                    </div>
+                    <div class="total">Total : $19.69</div>
+                    <a href="#" class="btn-total">Checkout</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Header-nav ends -->
+
+        <div class="login__box">
+            <i class="fa fa-times" id="form-close"></i>
+            <div class="login-form">
+                <h3>Login</h3>
+                <input type="email" class="login__form__account" placeholder="enter your email">
+                <input type="password" class="login__form__account" placeholder="Enter your password">
+                <input type="submit" value="Login Now" class="btn__login__now">
+                <input type="checkbox" id="remember">
+                <label for="remember">remember me</label>
+                <p>forget password? <a href="#">click here</a></p>
+                <p>don't have and account? <a href="#">register now</a></p>
+            </div>
+        </div>
+
+        <!-- Hero starts -->
+
+        <div class="hero">
+            <div class="swiper hero-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide hero-banner">
+                        <a href="#">
+                            <img class="hero-banner-img" src="./assets/img/mainbanner1-1920x600.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="swiper-slide hero-banner">
+                        <a href="#">
+                            <img class="hero-banner-img" src="./assets/img/mainbanner2-1920x600.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-button-next">
+                    <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                </div>
+                <div class="swiper-button-prev">
+                    <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hero ends -->
+
+        <!-- Promo-item starts -->
+
+        <div class="promo-item">
+            <div class="container">
+                <div class="service">
+                    <div class="box-container mr-container">
+                        <div class="service-box">
+                            <a href="#" class="service-circle">
+                                <i class="fa fa-truck" aria-hidden="true"></i>
+                            </a>
+                            <div class="service-content">
+                                <h4 class="service-title">FREE SHIPPING</h4>
+                                <p class="service-desc">On order over $150</p>
+                            </div>
+                        </div>
+                        <div class="service-box">
+                            <a href="#" class="service-circle">
+                                <i class="fa fa-credit-card" aria-hidden="true"></i>
+                            </a>
+                            <div class="service-content">
+                                <h4 class="service-title">CASH ON DELIVERY</h4>
+                                <p class="service-desc">100% money back guarantee</p>
+                            </div>
+                        </div>
+                        <div class="service-box">
+                            <a href="#" class="service-circle">
+                                <i class="fa fa-gift" aria-hidden="true"></i>
+                            </a>
+                            <div class="service-content">
+                                <h4 class="service-title">SPECIAL GIFT CARD</h4>
+                                <p class="service-desc">Offer special bonuses with gift</p>
+                            </div>
+                        </div>
+                        <div class="service-box">
+                            <a href="#" class="service-circle">
+                                <i class="fa fa-headphones" aria-hidden="true"></i>
+                            </a>
+                            <div class="service-content">
+                                <h4 class="service-title">24/7 CUSTOMER SERVICE</h4>
+                                <p class="service-desc">Call us 24/7 at 123-456-789</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Promo-item ends -->
+
+        <!-- Product starts -->
+
+        <div class="product">
+            <div class="container">
+                <div class="top-product">
+                    <h3 class="product-title">TOP PRODUCT</h3>
+                </div>
+                <div class="product-menu">
+                    <ul class="product-menu-list">
+                        <li>
+                            <a href="#" class="list-item active">Latest</a>
+                        </li>
+                        <li>
+                            <a href="#" class="list-item">Special</a>
+                        </li>
+                        <li>
+                            <a href="#" class="list-item">Bestseller</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="swiper product-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide product-box">
+                            <a href="#" class="product-imgage-box">
+                                <img class="product-image" src="./assets/img/pizza-1.jpg" alt="">
+                            </a>
+                            <div class="product-social-icon">
+                                <a href="#" class="fa fa-heart"></a>
+                                <a href="#" class="fa fa-eye"></a>  
+                                <a href="#" class="fa fa-search"></a>  
+                            </div>
+                            <div class="product-info">
+                                <div class="rating-product">
+                                    <h4 class="rating-content">
+                                        <a href="#">PeppiPizza</a>
+                                    </h4>
+                                    <div class="social">
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <div class="price-cart">
+                                    <p class="price">$241.99</p>
+                                    <button class="price-btn" onclick="addCart(this)">Order Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide product-box">
+                            <a href="#" class="product-imgage-box">
+                                <img class="product-image" src="./assets/img/pizza-1.jpg" alt="">
+                            </a>
+                            <div class="product-social-icon">
+                                <a href="#" class="fa fa-heart"></a>
+                                <a href="#" class="fa fa-eye"></a>  
+                                <a href="#" class="fa fa-search"></a>  
+                            </div>
+                            <div class="product-info">
+                                <div class="rating-product">
+                                    <h4 class="rating-content">
+                                        <a href="#">PeppiPizza</a>
+                                    </h4>
+                                    <div class="social">
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <div class="price-cart">
+                                    <p class="price">$241.99</p>
+                                    <button class="price-btn" onclick="addCart(this)">Order Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide product-box">
+                            <a href="#" class="product-imgage-box">
+                                <img class="product-image" src="./assets/img/pizza-1.jpg" alt="">
+                            </a>
+                            <div class="product-social-icon">
+                                <a href="#" class="fa fa-heart"></a>
+                                <a href="#" class="fa fa-eye"></a>  
+                                <a href="#" class="fa fa-search"></a>  
+                            </div>
+                            <div class="product-info">
+                                <div class="rating-product">
+                                    <h4 class="rating-content">
+                                        <a href="#">PeppiPizza</a>
+                                    </h4>
+                                    <div class="social">
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <div class="price-cart">
+                                    <p class="price">$241.99</p>
+                                    <button class="price-btn" onclick="addCart(this)">Order Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide product-box">
+                            <a href="#" class="product-imgage-box">
+                                <img class="product-image" src="./assets/img/pizza-1.jpg" alt="">
+                            </a>
+                            <div class="product-social-icon">
+                                <a href="#" class="fa fa-heart"></a>
+                                <a href="#" class="fa fa-eye"></a>  
+                                <a href="#" class="fa fa-search"></a>  
+                            </div>
+                            <div class="product-info">
+                                <div class="rating-product">
+                                    <h4 class="rating-content">
+                                        <a href="#">PeppiPizza</a>
+                                    </h4>
+                                    <div class="social">
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <div class="price-cart">
+                                    <p class="price">$241.99</p>
+                                    <button class="price-btn" onclick="addCart(this)">Order Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide product-box">
+                            <a href="#" class="product-imgage-box">
+                                <img class="product-image" src="./assets/img/pizza-1.jpg" alt="">
+                            </a>
+                            <div class="product-social-icon">
+                                <a href="#" class="fa fa-heart"></a>
+                                <a href="#" class="fa fa-eye"></a>  
+                                <a href="#" class="fa fa-search"></a>  
+                            </div>
+                            <div class="product-info">
+                                <div class="rating-product">
+                                    <h4 class="rating-content">
+                                        <a href="#">PeppiPizza</a>
+                                    </h4>
+                                    <div class="social">
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <div class="price-cart">
+                                    <p class="price">$241.99</p>
+                                    <button class="price-btn" onclick="addCart(this)">Order Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide product-box">
+                            <a href="#" class="product-imgage-box">
+                                <img class="product-image" src="./assets/img/pizza-1.jpg" alt="">
+                            </a>
+                            <div class="product-social-icon">
+                                <a href="#" class="fa fa-heart"></a>
+                                <a href="#" class="fa fa-eye"></a>  
+                                <a href="#" class="fa fa-search"></a>  
+                            </div>
+                            <div class="product-info">
+                                <div class="rating-product">
+                                    <h4 class="rating-content">
+                                        <a href="#">PeppiPizza</a>
+                                    </h4>
+                                    <div class="social">
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <div class="price-cart">
+                                    <p class="price">$241.99</p>
+                                    <button class="price-btn" onclick="addCart(this)">Order Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide product-box">
+                            <a href="#" class="product-imgage-box">
+                                <img class="product-image" src="./assets/img/pizza-1.jpg" alt="">
+                            </a>
+                            <div class="product-social-icon">
+                                <a href="#" class="fa fa-heart"></a>
+                                <a href="#" class="fa fa-eye"></a>  
+                                <a href="#" class="fa fa-search"></a>  
+                            </div>
+                            <div class="product-info">
+                                <div class="rating-product">
+                                    <h4 class="rating-content">
+                                        <a href="#">PeppiPizza</a>
+                                    </h4>
+                                    <div class="social">
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <div class="price-cart">
+                                    <p class="price">$241.99</p>
+                                    <button class="price-btn" onclick="addCart(this)">Order Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide product-box">
+                            <a href="#" class="product-imgage-box">
+                                <img class="product-image" src="./assets/img/pizza-1.jpg" alt="">
+                            </a>
+                            <div class="product-social-icon">
+                                <a href="#" class="fa fa-heart"></a>
+                                <a href="#" class="fa fa-eye"></a>  
+                                <a href="#" class="fa fa-search"></a>  
+                            </div>
+                            <div class="product-info">
+                                <div class="rating-product">
+                                    <h4 class="rating-content">
+                                        <a href="#">PeppiPizza</a>
+                                    </h4>
+                                    <div class="social">
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <div class="price-cart">
+                                    <p class="price">$241.99</p>
+                                    <button class="price-btn" onclick="addCart(this)">Order Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide product-box">
+                            <a href="#" class="product-imgage-box">
+                                <img class="product-image" src="./assets/img/pizza-1.jpg" alt="">
+                            </a>
+                            <div class="product-social-icon">
+                                <a href="#" class="fa fa-heart"></a>
+                                <a href="#" class="fa fa-eye"></a>  
+                                <a href="#" class="fa fa-search"></a>  
+                            </div>
+                            <div class="product-info">
+                                <div class="rating-product">
+                                    <h4 class="rating-content">
+                                        <a href="#">PeppiPizza</a>
+                                    </h4>
+                                    <div class="social">
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <div class="price-cart">
+                                    <p class="price">$241.99</p>
+                                    <button class="price-btn" onclick="addCart(this)">Order Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide product-box">
+                            <a href="#" class="product-imgage-box">
+                                <img class="product-image" src="./assets/img/pizza-2.jpg" alt="">
+                            </a>
+                            <div class="product-social-icon">
+                                <a href="#" class="fa fa-heart"></a>
+                                <a href="#" class="fa fa-eye"></a>  
+                                <a href="#" class="fa fa-search"></a>  
+                            </div>
+                            <div class="product-info">
+                                <div class="rating-product">
+                                    <h4 class="rating-content">
+                                        <a href="#">PeppiPizza</a>
+                                    </h4>
+                                    <div class="social">
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <div class="price-cart">
+                                    <p class="price">$241.99</p>
+                                    <button class="price-btn" onclick="addCart(this)">Order Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide product-box">
+                            <a href="#" class="product-imgage-box">
+                                <img class="product-image" src="./assets/img/pizza-3.jpg" alt="">
+                            </a>
+                            <div class="product-social-icon">
+                                <a href="#" class="fa fa-heart"></a>
+                                <a href="#" class="fa fa-eye"></a>  
+                                <a href="#" class="fa fa-search"></a>  
+                            </div>
+                            <div class="product-info">
+                                <div class="rating-product">
+                                    <h4 class="rating-content">
+                                        <a href="#">PeppiPizza</a>
+                                    </h4>
+                                    <div class="social">
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <div class="price-cart">
+                                    <p class="price">$241.99</p>
+                                    <button class="price-btn" onclick="addCart(this)">Order Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide product-box">
+                            <a href="#" class="product-imgage-box">
+                                <img class="product-image" src="./assets/img/pizza-4.jpg" alt="">
+                            </a>
+                            <div class="product-social-icon">
+                                <a href="#" class="fa fa-heart"></a>
+                                <a href="#" class="fa fa-eye"></a>  
+                                <a href="#" class="fa fa-search"></a>  
+                            </div>
+                            <div class="product-info">
+                                <div class="rating-product">
+                                    <h4 class="rating-content">
+                                        <a href="#">PeppiPizza</a>
+                                    </h4>
+                                    <div class="social">
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <div class="price-cart">
+                                    <p class="price">$241.99</p>
+                                    <button class="price-btn" onclick="addCart(this)">Order Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide product-box">
+                            <a href="#" class="product-imgage-box">
+                                <img class="product-image" src="./assets/img/pizza-5.jpg" alt="">
+                            </a>
+                            <div class="product-social-icon">
+                                <a href="#" class="fa fa-heart"></a>
+                                <a href="#" class="fa fa-eye"></a>  
+                                <a href="#" class="fa fa-search"></a>  
+                            </div>
+                            <div class="product-info">
+                                <div class="rating-product">
+                                    <h4 class="rating-content">
+                                        <a href="#">PeppiPizza</a>
+                                    </h4>
+                                    <div class="social">
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <div class="price-cart">
+                                    <p class="price">$241.99</p>
+                                    <button class="price-btn" onclick="addCart(this)">Order Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide product-box">
+                            <a href="#" class="product-imgage-box">
+                                <img class="product-image" src="./assets/img/pizza-6.jpg" alt="">
+                            </a>
+                            <div class="product-social-icon">
+                                <a href="#" class="fa fa-heart"></a>
+                                <a href="#" class="fa fa-eye"></a>  
+                                <a href="#" class="fa fa-search"></a>  
+                            </div>
+                            <div class="product-info">
+                                <div class="rating-product">
+                                    <h4 class="rating-content">
+                                        <a href="#">PeppiPizza</a>
+                                    </h4>
+                                    <div class="social">
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <div class="price-cart">
+                                    <p class="price">$241.99</p>
+                                    <button class="price-btn" onclick="addCart(this)">Order Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide product-box">
+                            <a href="#" class="product-imgage-box">
+                                <img class="product-image" src="./assets/img/pizza-7.jpg" alt="">
+                            </a>
+                            <div class="product-social-icon">
+                                <a href="#" class="fa fa-heart"></a>
+                                <a href="#" class="fa fa-eye"></a>  
+                                <a href="#" class="fa fa-search"></a>  
+                            </div>
+                            <div class="product-info">
+                                <div class="rating-product">
+                                    <h4 class="rating-content">
+                                        <a href="#">PeppiPizza</a>
+                                    </h4>
+                                    <div class="social">
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <div class="price-cart">
+                                    <p class="price">$241.99</p>
+                                    <button class="price-btn" onclick="addCart(this)">Order Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide product-box">
+                            <a href="#" class="product-imgage-box">
+                                <img class="product-image" src="./assets/img/pizza-1.jpg" alt="">
+                            </a>
+                            <div class="product-social-icon">
+                                <a href="#" class="fa fa-heart"></a>
+                                <a href="#" class="fa fa-eye"></a>  
+                                <a href="#" class="fa fa-search"></a>  
+                            </div>
+                            <div class="product-info">
+                                <div class="rating-product">
+                                    <h4 class="rating-content">
+                                        <a href="#">PeppiPizza</a>
+                                    </h4>
+                                    <div class="social">
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <div class="price-cart">
+                                    <p class="price">$241.99</p>
+                                    <button class="price-btn" onclick="addCart(this)">Order Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product ends -->
+
+        <!-- Order now starts-->
+
+        <div class="order-now">
+            <div class="pizza-1">
+                <div class="inner-1">
+                    <div class="banner-desc">
+                        VEGGIE FUN <br>
+                        DELICIOUS SUMMER!
+                    </div>
+                    <a href="#" class="btn-default">Order Now</a>
+                    <div class="banner-saleof">
+                        <span>Get up to</span>
+                        <span>45%</span>
+                        <span>OFF</span>
+                    </div>
+                </div>
+            </div>
+            <div class="pizza-2"></div>
+        </div>
+
+        <!-- Order now ends-->
+
+        <!-- Newsletter starts-->
+
+        <div class="newletter">
+            <div class="container">
+                <div class="newletter-box">
+                    <div class="box-container mr-container">
+                        <div class="newletter-left">
+                            <div class="new-info">
+                                <a href="#" class="icon-letter">
+                                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                                </a>
+                                <div class="new-info-content">
+                                    <span>Newsletter</span>
+                                    <p>Get free 20% discount for all products on your first order.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="newletter-right">
+                            <div class="form-email">
+                                <input type="text" placeholder="Enter Your E-mail...">
+                                <button class="sub">Subscribe</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Newsletter ends-->
+
+        <!-- CATEGORIES starts -->
+        
+        <div class="categoies">
+            <div class="container">
+                <div class="top-product">
+                    <h3 class="product-title">CATEGORIES</h3>
+                </div>
+                <div class="swiper product-categori-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide categori-box">
+                            <a href="#">
+                                <img class="categori-img" src="./assets/img/categori-1.png" alt="">
+                            </a>
+                            <div class="categori-content">
+                                Burger
+                            </div>
+                        </div>
+                        <div class="swiper-slide categori-box">
+                            <a href="#">
+                                <img class="categori-img" src="./assets/img/categori-2.png" alt="">
+                            </a>
+                            <div class="categori-content">
+                                Burger
+                            </div>
+                        </div>
+                        <div class="swiper-slide categori-box">
+                            <a href="#">
+                                <img class="categori-img" src="./assets/img/categori-3.png" alt="">
+                            </a>
+                            <div class="categori-content">
+                                Burger
+                            </div>
+                        </div>
+                        <div class="swiper-slide categori-box">
+                            <a href="#">
+                                <img class="categori-img" src="./assets/img/categori-4.png" alt="">
+                            </a>
+                            <div class="categori-content">
+                                Burger
+                            </div>
+                        </div>
+                        <div class="swiper-slide categori-box">
+                            <a href="#">
+                                <img class="categori-img" src="./assets/img/categori-5.png" alt="">
+                            </a>
+                            <div class="categori-content">
+                                Burger
+                            </div>
+                        </div>
+                        <div class="swiper-slide categori-box">
+                            <a href="#">
+                                <img class="categori-img" src="./assets/img/categori-6.png" alt="">
+                            </a>
+                            <div class="categori-content">
+                                Burger
+                            </div>
+                        </div>
+                        <div class="swiper-slide categori-box">
+                            <a href="#">
+                                <img class="categori-img" src="./assets/img/categori-1.png" alt="">
+                            </a>
+                            <div class="categori-content">
+                                Burger
+                            </div>
+                        </div>
+                        <div class="swiper-slide categori-box">
+                            <a href="#">
+                                <img class="categori-img" src="./assets/img/categori-1.png" alt="">
+                            </a>
+                            <div class="categori-content">
+                                Burger
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CATEGORIES ends -->
+
+        <!-- Banner-sale starts-->
+        <div class="banner-sale">
+            <div class="container">
+                <div class="box-container mr-container">
+                    <div class="banner-sale-left">
+                        <img class="banner-sale-img" src="./assets/img/banner1.jpg" alt="">
+                        <div class="banner__sale__content">
+                            <div class="banner__title">
+                                <span class="banner__title__yellow">SPECIAL</span>
+                                PROMO
+                            </div>
+                            <div class="banner__title">
+                                PIZZA CHEESE
+                            </div>
+                            <div class="banner__btn-default">
+                                <a href="#" class="btn-default btn__defaulnt">Order Now</a>
+                            </div>
+                            <div class="banner__circle__sale">
+                                <span class="banner__cicrle__sale-title">UPTO</span>
+                                <span class="banner__cicrle__sale-title">20%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="banner-sale-right">
+                        <img class="banner-sale-img" src="./assets/img/banner2.jpg" alt="">
+                        <div class="banner__sale__content-right">
+                            <div class="banner__title__outer">Cheese</div>
+                            <div class="banner__title-right">Pizza</div>
+                            <div class="banner__offer">
+                                <span>This Weekend Only</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Banner-sale ends-->
+
+        <!-- Customer-said starts-->
+        <div class="customer">
+            <div class="container">
+                <div class="swiper customer-sli">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide customer-slider">
+                            <div class="customer-box">
+                                <h3 class="name-title">customer said</h3>
+                                <img class="customer-img" src="./assets/img/customer.jpg" alt="">
+                                <div class="user-name">
+                                    <span>Maria Lorem</span>
+                                    <p>Customer</p>
+                                </div>
+                                <div class="customer-text">
+                                    <p>
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                                        been the industry's standard dummy text ever since the 1500s, when an unknown printer
+                                        took a galley of type and scrambled it to make a type specimen book. It has survived 
+                                        not only five centuries, but also the leap into electronic typesetting, remaining
+                                        essentially unchanged. 
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide customer-slider">
+                            <div class="customer-box">
+                                <h3 class="name-title">customer said</h3>
+                                <img class="customer-img" src="./assets/img/customer.jpg" alt="">
+                                <div class="user-name">
+                                    <span>Maria Lorem</span>
+                                    <p>Customer</p>
+                                </div>
+                                <div class="customer-text">
+                                    <p>
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                                        been the industry's standard dummy text ever since the 1500s, when an unknown printer
+                                        took a galley of type and scrambled it to make a type specimen book. It has survived 
+                                        not only five centuries, but also the leap into electronic typesetting, remaining
+                                        essentially unchanged. 
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide customer-slider">
+                            <div class="customer-box">
+                                <h3 class="name-title">customer said</h3>
+                                <img class="customer-img" src="./assets/img/customer.jpg" alt="">
+                                <div class="user-name">
+                                    <span>Maria Lorem</span>
+                                    <p>Customer</p>
+                                </div>
+                                <div class="customer-text">
+                                    <p>
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                                        been the industry's standard dummy text ever since the 1500s, when an unknown printer
+                                        took a galley of type and scrambled it to make a type specimen book. It has survived 
+                                        not only five centuries, but also the leap into electronic typesetting, remaining
+                                        essentially unchanged. 
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dot dot-circle"></div>
+                </div>
+            </div>
+        </div>
+        <!-- Customer-said ends-->
+
+        <!-- Blog starts -->
+        <div class="blog">
+            <div class="container">
+                <div class="top-product">
+                    <h3 class="product-title">CATEGORIES</h3>
+                </div>
+                <div class="swiper blog-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide blog-box">
+                            <a href="#" class="blog-img-wrapper">
+                                <img class="blog-img" src="./assets/img/blog-1.png" alt="">
+                            </a>
+                            <div class="post-hover"></div>
+                            <div class="blog-content">
+                                <h3 class="blog-title">Many publishing packages</h3>
+                                <p class="blog-text">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                    has been the industry's standard dummy text ever since the 1500...  
+                                </p>
+                                <div class="more">
+                                    <a href="#" class="btn-more">Read more</a>
+                                </div>
+                                <div class="date-time">
+                                    <div class="blog-date">15</div>
+                                    <div class="blog-month">Jul</div>
+                                    <div class="blog-year">2021</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide blog-box">
+                            <a href="#" class="blog-img-wrapper">
+                                <img class="blog-img" src="./assets/img/blog-2.png" alt="">
+                            </a>
+                            <div class="post-hover"></div>
+                            <div class="blog-content">
+                                <h3 class="blog-title">Many publishing packages</h3>
+                                <p class="blog-text">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                    has been the industry's standard dummy text ever since the 1500...  
+                                </p>
+                                <div class="more">
+                                    <a href="#" class="btn-more">Read more</a>
+                                </div>
+                                <div class="date-time">
+                                    <div class="blog-date">15</div>
+                                    <div class="blog-month">Jul</div>
+                                    <div class="blog-year">2021</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide blog-box">
+                            <a href="#" class="blog-img-wrapper">
+                                <img class="blog-img" src="./assets/img/blog-3.png" alt="">
+                            </a>
+                            <div class="post-hover"></div>
+                            <div class="blog-content">
+                                <h3 class="blog-title">Many publishing packages</h3>
+                                <p class="blog-text">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                    has been the industry's standard dummy text ever since the 1500...  
+                                </p>
+                                <div class="more">
+                                    <a href="#" class="btn-more">Read more</a>
+                                </div>
+                                <div class="date-time">
+                                    <div class="blog-date">15</div>
+                                    <div class="blog-month">Jul</div>
+                                    <div class="blog-year">2021</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide blog-box">
+                            <a href="#" class="blog-img-wrapper">
+                                <img class="blog-img" src="./assets/img/blog-1.png" alt="">
+                            </a>
+                            <div class="post-hover"></div>
+                            <div class="blog-content">
+                                <h3 class="blog-title">Many publishing packages</h3>
+                                <p class="blog-text">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                    has been the industry's standard dummy text ever since the 1500...  
+                                </p>
+                                <div class="more">
+                                    <a href="#" class="btn-more">Read more</a>
+                                </div>
+                                <div class="date-time">
+                                    <div class="blog-date">15</div>
+                                    <div class="blog-month">Jul</div>
+                                    <div class="blog-year">2021</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide blog-box">
+                            <a href="#" class="blog-img-wrapper">
+                                <img class="blog-img" src="./assets/img/blog-4.png" alt="">
+                            </a>
+                            <div class="post-hover"></div>
+                            <div class="blog-content">
+                                <h3 class="blog-title">Many publishing packages</h3>
+                                <p class="blog-text">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                    has been the industry's standard dummy text ever since the 1500...  
+                                </p>
+                                <div class="more">
+                                    <a href="#" class="btn-more">Read more</a>
+                                </div>
+                                <div class="date-time">
+                                    <div class="blog-date">15</div>
+                                    <div class="blog-month">Jul</div>
+                                    <div class="blog-year">2021</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Blog ends-->
+
+        <!-- Brand starts-->
+        <div class="brand">
+            <div class="container">
+                <div class="brand-box">
+                    <div class="swiper brand-slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide brand-center">
+                                <img src="./assets/img/brand-1.png" alt="">
+                            </div>
+                            <div class="swiper-slide brand-center">
+                                <img src="./assets/img/brand-2.png" alt="">
+                            </div>
+                            <div class="swiper-slide brand-center">
+                                <img src="./assets/img/brand-3.png" alt="">
+                            </div>
+                            <div class="swiper-slide brand-center">
+                                <img src="./assets/img/brand-4.png" alt="">
+                            </div>
+                            <div class="swiper-slide brand-center">
+                                <img src="./assets/img/brand-5.png" alt="">
+                            </div>
+                            <div class="swiper-slide brand-center">
+                                <img src="./assets/img/brand-6.png" alt="">
+                            </div>
+                            <div class="swiper-slide brand-center">
+                                <img src="./assets/img/brand-2.png" alt="">
+                            </div>
+                            <div class="swiper-slide brand-center">
+                                <img src="./assets/img/brand-5.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Brand ends-->
+        
+        <!-- Footer starts -->
+        <div class="footer-top">
+            <div class="container">
+                <div class="box-container mr-container">
+                    <div class="footer-1">
+                        <h4 class="footer-title">Contact</h4>
+                        <div class="site">
+                            <ul class="site-list">
+                                <li class="list-link">
+                                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                    <span>
+                                        National park,d1 588436,United States
+                                    </span>
+                                </li>
+                                <li>
+                                    <i class="fa fa-phone" aria-hidden="true"></i>
+                                    <span>
+                                        +91 123 456 789
+                                    </span>
+                                </li>
+                                <li>
+                                    <i class="fa fa-fax" aria-hidden="true"></i>
+                                    <span>
+                                      0123-456-789
+                                    </span>
+                                </li>
+                                <li>
+                                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                                    <span>
+                                        demo@Yourstore.com
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-2">
+                        <h4 class="footer-title">Contact</h4>
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="#">About Us</a>
+                            </li>
+                            <li>
+                                <a href="#">Delivery Information</a>
+                            </li>
+                            <li>
+                                <a href="#">Privacy Policy</a>
+                            </li>
+                            <li>
+                                <a href="#">Terms & Conditions</a>
+                            </li>
+                            <li>
+                                <a href="#">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-2">
+                        <h4 class="footer-title">Extras</h4>
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="#">Brands</a>
+                            </li>
+                            <li>
+                                <a href="#">Gift Certificates</a>
+                            </li>
+                            <li>
+                                <a href="#">Affiliate</a>
+                            </li>
+                            <li>
+                                <a href="#">Specials</a>
+                            </li>
+                            <li>
+                                <a href="#">Site Map</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-3">
+                        <h4 class="footer-title">Find Us On</h4>
+                        <div class="footer-social-link">
+                            <a href="#" class="social-link-item">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                            <a href="#" class="social-link-item">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                            <a href="#" class="social-link-item">
+                                <i class="fa fa-instagram"></i>
+                            </a>
+                            <a href="#" class="social-link-item">
+                                <i class="fa fa-linkedin"></i>
+                            </a>
+                            <a href="#" class="social-link-item">
+                                <i class="fa fa-youtube-play"></i>
+                            </a>
+                        </div>
+                        <h4 class="footer-title footer-title-card">Payment</h4>
+                        <div class="footer-social-link">
+                            <a href="#" class="card">
+                                <i class="fa fa-cc-visa"></i>
+                            </a>
+                            <a href="#" class="card">
+                                <i class="fa fa-credit-card-alt" aria-hidden="true"></i>
+                            </a>
+                            <a href="#" class="card">
+                                <i class="fa fa-cc-mastercard" aria-hidden="true"></i>
+                            </a>
+                            <a href="#" class="card">
+                                <i class="fa fa-cc-paypal" aria-hidden="true"></i>
+                            </a>
+                            <a href="#" class="card">
+                                <i class="fa fa-cc-discover" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p class="text-footer-center">
+                        Powered By <a href="#">OpenCart </a> Your Store © 2021
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- Footer ends -->
+
+        <!-- scroll top button  -->
+        <a href="#" class="fa fa-angle-up" id="scroll-top"></a>
+    </div>
+    <!-- File js -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="./assets/js/app.js"></script>
+</body>
+</html>
