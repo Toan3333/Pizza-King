@@ -2,10 +2,6 @@
   .header-top {
     padding: 1.5rem 2rem;
   }
-
-  ul.header-navigation li {
-    margin: 0 1rem;
-  }
 }
 
 @media screen and (max-width: 1023px) {
@@ -203,6 +199,67 @@
     padding: 0.5rem;
   }
 
+  .header-nav-center {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 10000000000000;
+
+    height: 100%;
+  }
+
+  .header-nav-center.active {
+    display: block;
+  }
+
+  ul.header-navigation {
+    background-color: var(--white);
+    width: 28rem;
+    margin-right: 0;
+    position: absolute;
+    padding: 2rem 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2);
+    overflow-x: hidden;
+  }
+
+  .item {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+
+  .shop-1.active {
+    height: 15rem;
+  }
+  .item i {
+    display: none;
+    transition: 0.3s linear;
+  }
+
+  .item span {
+    float: right;
+    font-size: 1.3rem;
+    font-weight: 300;
+    display: block;
+  }
+
+  #times {
+    text-align: right;
+    display: block;
+    padding: 1rem 1.5rem;
+    font-size: 1.6rem;
+  }
+
+  ul.header-navigation li {
+    display: block;
+    padding: 0.5rem 1.2rem;
+    margin: 0;
+  }
+
   .hotline-number {
     display: none;
   }
@@ -233,6 +290,88 @@
 
   .shopping-my-cart {
     width: 23rem;
+  }
+
+  ul.header-navigation-shop {
+    background-color: none;
+    box-shadow: none;
+    padding: 1.5rem;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+
+  ul.shop-nav li a::before {
+    display: none;
+  }
+
+  ul.header-navigation-shop.active {
+    top: 0rem;
+    animation: top-bottom 0.4s ease-out;
+  }
+
+  .header-navigation-shop-2 {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    top: 0rem;
+    padding: 0;
+  }
+
+  .header-navigation-shop.header-navigation-shop-2.active {
+    top: 18.8rem;
+    animation: top 0.4s ease-out;
+  }
+
+  .categori__nav {
+    width: 100%;
+    margin-right: 0;
+    overflow: hidden;
+  }
+
+  .border-shop-banner {
+    margin-top: 0;
+  }
+
+  .banner-shop-left {
+    width: 100%;
+  }
+
+  .banner-shop-right {
+    width: 100%;
+  }
+
+  @keyframes top {
+    0% {
+      top: 0;
+    }
+
+    100% {
+      top: 50rem;
+    }
+  }
+
+  @keyframes top-bottom {
+    0% {
+      top: -100%;
+    }
+
+    100% {
+      top: 15%;
+    }
+  }
+
+  .shop-1 {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  ul.shop-nav li a.item-shop {
+    margin-bottom: 0;
+  }
+
+  .item {
+    margin-bottom: 1.6rem;
   }
 
   .service-box {
@@ -346,6 +485,108 @@
 
   .shopping-cart-box i {
     font-size: 1.8rem;
+  }
+
+  .product {
+    padding: 2.5rem 0;
+  }
+
+  .product-title {
+    font-size: 2.4rem;
+  }
+
+  .rating-content {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+
+  .social {
+    font-size: 1.2rem;
+  }
+
+  .newletter {
+    padding: 2rem;
+  }
+
+  .new-info-content span {
+    font-size: 1.6rem;
+    font-weight: 500;
+  }
+
+  .form-email input {
+    padding: 1.2rem 1.4rem;
+  }
+
+  .form-email {
+    width: 28rem;
+  }
+
+  .categoies {
+    padding: 1.5rem 0;
+  }
+
+  .categori-box {
+    padding: 0;
+  }
+
+  .user-name {
+    font-size: 1.6rem;
+  }
+
+  .swiper-pagination-bullets .swiper-pagination-bullet,
+  .swiper-pagination-horizontal.swiper-pagination-bullets
+    .swiper-pagination-bullet {
+    margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 4px);
+    background-color: var(--orange);
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .blog-title {
+    color: var(--white);
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+  }
+
+  .blog-text {
+    margin-bottom: 2.8rem;
+  }
+
+  .swiper-button-prev {
+    padding: 0.5rem 1.8rem;
+    font-size: 1.5rem;
+    height: 3.5rem;
+  }
+
+  .swiper-button-next {
+    padding: 0.5rem 1.8rem;
+    font-size: 1.5rem;
+    height: 3.5rem;
+  }
+
+  .banner-sale {
+    padding: 2rem 0;
+  }
+
+  .new-info-content p {
+    font-size: 1.3rem;
+  }
+
+  .rating-product {
+    margin-bottom: 0;
+  }
+
+  .price-btn {
+    font-size: 1.4rem;
+  }
+
+  .price {
+    font-size: 1.4rem;
+  }
+
+  .list-item {
+    font-size: 1.6rem;
   }
 
   .categoies {
